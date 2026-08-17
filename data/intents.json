@@ -1,0 +1,109 @@
+{
+    "greeting": {
+        "patterns": [
+            "hi",
+            "hello",
+            "hey",
+            "good morning",
+            "good afternoon",
+            "good evening",
+            "hello there",
+            "hi there"
+        ],
+        "response": "Hello! 👋 Welcome to the AI & Data Science Internship Registration Assistant. How can I help you?"
+    },
+
+    "register": {
+        "patterns": [
+            "register",
+            "registration",
+            "I want to register",
+            "I want to apply",
+            "I want to join",
+            "apply for internship",
+            "sign me up",
+            "how can I register",
+            "I want to enroll",
+            "start registration"
+        ],
+        "response": "Sure! I can help you complete the internship registration."
+    },
+
+    "help": {
+        "patterns": [
+            "help",
+            "I need help",
+            "help me",
+            "support",
+            "I need support",
+            "assist me",
+            "can you help me",
+            "guide me",
+            "what can you do"
+        ],
+        "response": "I'm here to help! You can ask me about registration, internship details, required skills, or application status."
+    },
+
+    "internship_details": {
+        "patterns": [
+            "tell me about the internship",
+            "what is the internship",
+            "internship details",
+            "give me internship information",
+            "what does this internship offer",
+            "tell me more about the internship",
+            "about the internship"
+        ],
+        "response": "This is a Free Online AI & Data Science Internship where you build practical projects using Python, NLP, Machine Learning and related technologies."
+    },
+
+    "skills": {
+        "patterns": [
+            "what skills are required",
+            "required skills",
+            "what should I learn",
+            "skills needed",
+            "which skills are required",
+            "what programming skills are needed",
+            "technical skills",
+            "required technologies"
+        ],
+        "response": "The recommended skills include Python, NLP, Machine Learning, text preprocessing, intent classification and basic web development."
+    },
+
+    "status": {
+        "patterns": [
+            "application status",
+            "check my application",
+            "what is my application status",
+            "registration status",
+            "check registration",
+            "is my application submitted",
+            "application update"
+        ],
+        "response": "Your registration information is saved locally after completing the registration process. Please contact the internship coordinator for official application status."
+    },
+
+    "thank_you": {
+        "patterns": [
+            "thank you",
+            "thanks",
+            "thank you so much",
+            "thanks a lot",
+            "I appreciate it",
+            "great thanks"
+        ],
+        "response": "You're welcome! 😊 Is there anything else I can help you with?"
+    },
+
+    "goodbye": {
+        "patterns": [
+            "bye",
+            "goodbye",
+            "see you",
+            "exit",
+            "quit"
+        ],
+        "response": "Goodbye! 👋 Thank you for using the AI Registration Assistant."
+    }
+}

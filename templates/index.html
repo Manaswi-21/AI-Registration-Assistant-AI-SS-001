@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Registration Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Registration Assistant</h1>
+            <p>Internship Registration • NLP • Intent Recognition</p>
+        </div>
+
+        <div id="chat" class="chat">
+            <div class="message bot">
+                Hello! I can guide you through the internship registration process.
+                Type <b>register</b> to start.
+            </div>
+        </div>
+
+        <div class="quick">
+            <button onclick="sendQuick('register')">Register</button>
+            <button onclick="sendQuick('required skills')">Skills</button>
+            <button onclick="sendQuick('internship details')">Details</button>
+            <button onclick="sendQuick('help')">Help</button>
+        </div>
+
+        <div class="input-area">
+            <input id="message" type="text" placeholder="Type your message..." onkeydown="handleKey(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+<script>
+function addMessage(text, sender) {
+    const chat = document.getElementById("chat");
+    const div = document.createElement("div");
+    div.className = "message " + sender;
+    div.innerHTML = text.replace(/\n/g, "<br>");
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+}
+
+async function sendMessage() {
+    const input = document.getElementById("message");
+    const message = input.value.trim();
+    if (!message) return;
+
+    addMessage(message, "user");
+    input.value = "";
+
+    const response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: message})
+    });
+
+    const data = await response.json();
+    addMessage(data.response, "bot");
+}
+
+function sendQuick(text) {
+    document.getElementById("message").value = text;
+    sendMessage();
+}
+
+function handleKey(event) {
+    if (event.key === "Enter") sendMessage();
+}
+</script>
+</body>
+</html>
