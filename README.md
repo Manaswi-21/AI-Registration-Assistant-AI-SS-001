@@ -166,7 +166,7 @@ AI_Registration_Assistant_AI-SS-001/
 │
 ├── data/
 │   ├── intents.json
-│   └── example_registration.json
+│   └── registrations.json
 │
 ├── static/
 │   └── style.css
