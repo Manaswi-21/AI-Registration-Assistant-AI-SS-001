@@ -179,3 +179,21 @@ AI_Registration_Assistant_AI-SS-001/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+---
+
+## 📸 Screenshots
+
+### 1. Chatbot Homepage
+![Chatbot Homepage](screenshots/image_1.png)
+
+### 2. Registration Process
+![Registration Process](screenshots/image_2.png)
+
+### 3. Internship Details
+![Chatbot Interactions](screenshots/image_3.png)
+
+### 4. Student Information Collection
+![Student Information Collection](screenshots/image_4.png)
+
+### 5. Registration Confirmation
+![Registration Confirmation](screenshots/image_5.png)
