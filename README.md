@@ -179,6 +179,7 @@ AI_Registration_Assistant_AI-SS-001/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 ---
 
 ## 📸 Screenshots
